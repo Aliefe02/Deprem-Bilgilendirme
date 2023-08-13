@@ -23,7 +23,6 @@ last_earthquakes = []
 new_earthquakes = []
 unreported_earthquakes = []
 important_earthquakes = []
-print('-' * 20)
 i = 0
 while True:
 
@@ -62,24 +61,7 @@ while True:
                   launch="https://deprem.afad.gov.tr/last-earthquakes")
                 toast.show()
             
-            print("*"*20)
-            print(e.__str__())
-
         unreported_earthquakes.clear()
-        
-        time.sleep(10)
-        
-        # i += 1
-        # print(str(i))
-
-        #---------------------------------------------------
-        # Send notification when important_earthquake happens
-        #---------------------------------------------------
-
-        
+        time.sleep(60)
     except Exception as e:
-        # print(str(e))
-        # unreported_earthquakes.clear()
-        # new_earthquakes.clear()
-        # last_earthquakes.clear()
         pass
